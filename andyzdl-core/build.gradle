@@ -12,7 +12,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -27,7 +27,14 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    api 'com.android.support:appcompat-v7:27.1.1'
-    api 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation project(':andyzdl-annotations')
+    api 'com.google.android.material:material:1.1.0-alpha01'
+    api 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    api project(':andyzdl-annotations')
+    //字体图标
+    api ('com.joanzapata.iconify:android-iconify-ionicons:2.2.2'){
+        exclude group: 'com.android.support'
+    }
+    api ('com.joanzapata.iconify:android-iconify-fontawesome:2.2.2') {
+        exclude group: 'com.android.support'
+    }
 }
