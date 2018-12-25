@@ -1,4 +1,4 @@
-package com.andyzdl.ec.andyzdl_core.APP;
+package com.andyzdl.ec.andyzdl_core.app;
 
 /**
  * @anthor AndyZDL

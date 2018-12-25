@@ -1,12 +1,10 @@
-package com.andyzdl.ec.andyzdl_core.APP;
+package com.andyzdl.ec.andyzdl_core.app;
 
 import com.joanzapata.iconify.IconFontDescriptor;
 import com.joanzapata.iconify.Iconify;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import static com.andyzdl.ec.andyzdl_core.APP.ConfigType.ICON;
 
 public class Configurator {
     private static final HashMap<String, Object> ANDYZDL_CONFIGS = new HashMap<>();
